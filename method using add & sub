@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Sub_Mul {
+    public void add(int x, int y) {
+        System.out.println("the addition of two numbers is:" + (x + y));
+    }
+
+    public void sub(int x, int y) {
+        System.out.println("the subtraction of two numbers is:" + (x - y));
+    }
+
+    public void mul(float x, float y) {
+        System.out.println("the multiplication of two numbers is:" + (x * y));
+    }
+
+    public void div(float x, float y) {
+        System.out.println("the division of two numbers is:" + (x / y));
+    }
+
+    public void mod(float x, float y) {
+        System.out.println("the modulus of two numbers is:" + (x % y));
+    }
+
+    public static void main(String[] args) {
+        Sub_Mul ac = new Sub_Mul();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number:");
+        int x = sc.nextInt();
+        System.out.println("enter a number:");
+        int y = sc.nextInt();
+        ac.add(x, y);
+        ac.sub(x, y);
+        ac.mul(x, y);
+        ac.div(x, y);
+        ac.mod(x, y);
+        sc.close();
+    }
+}
